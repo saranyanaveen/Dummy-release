@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-  jobs:
+  workflow_dispatch:  # Allows manual triggering
+jobs:
   update_draft_release:
     runs-on: ubuntu-latest
 
