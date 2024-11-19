@@ -4,10 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened, edited, closed, reopened]
-
-jobs:
+  jobs:
   update_draft_release:
     runs-on: ubuntu-latest
 
